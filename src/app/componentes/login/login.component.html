@@ -1,0 +1,26 @@
+<h1>login works!</h1>
+
+<section class="main">
+    <div class="input">
+    </div>
+    <div class="input">
+        <label for="email">Email</label>
+        <input id="email" type="email" [(ngModel)]="email">
+    </div>
+
+    <div class="input">
+        <label for="clave">Clave</label>
+        <input id="clave" type="password" [(ngModel)]="clave">
+    </div>
+    <div class="input">
+        <button (click)="iniciarSesion()">Iniciar Sesión</button>
+    </div>
+    @if(flagError){
+        <p class="text-center text-primary">{{msjError}}</p>
+        <button (click)="accesoDirecto()">Acceso Directo</button>
+    }
+    <br>
+    <div class="input">
+        <button (click)="registro()">Registrarme</button>
+    </div>
+</section>

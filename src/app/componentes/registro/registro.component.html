@@ -1,0 +1,17 @@
+<section class="main" *ngIf="!sesionIniciada">
+    <div class="input">
+        <label for="email">Email</label>
+        <input id="nombre" type="text" [(ngModel)]="email">
+    </div>
+    <div class="input">
+        <label for="clave">Clave</label>
+        <input id="clave" type="password" [(ngModel)]="clave">
+    </div>
+    <div class="input">
+        <button (click)="registrarUsuario()">Registrarse</button>
+    </div>
+</section>
+
+@if(flagError){
+    <p class="text-center text-primary">{{msjError}}</p>
+}

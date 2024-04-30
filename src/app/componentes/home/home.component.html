@@ -1,0 +1,12 @@
+<div *ngIf="email">
+    <p>Bienvenido {{ email }}!</p>
+    <button (click)="cerrarSesion()" class="btnSesion">Cerrar sesión</button>
+</div>
+
+<div *ngIf="!email">
+    <p>Bienvenido!</p>
+    <button (click)="iniciarSesion()" class="btnSesion">Iniciar Sesion</button>
+</div>
+
+<button routerLink="/quienSoy" routerLinkActive="active-route">Quien Soy?</button>
+<router-outlet></router-outlet>
