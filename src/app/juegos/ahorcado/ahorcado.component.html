@@ -1,0 +1,14 @@
+<div class="ahorcado-container">
+    <h1>Ahorcado</h1>
+    <div class="imagen">
+        <img [src]="'../../assets/juegos/ahorcado/' + imagenActual + '.png'" alt="Ahorcado">
+    </div>
+    <div class="palabra" id="palabra">{{ palabraMostrada }}</div>
+    <div class="intentos">Intentos restantes: {{ intentosMaximos - intentosActuales }}</div>
+    <div class="teclado">
+      <button *ngFor="let letra of letras" (click)="intentarLetra(letra)" class="tecla">{{ letra }}</button>
+    </div>
+    <div class="mensaje" id="mensaje"></div>
+    <button (click)="reiniciarJuego()">Reiniciar juego</button>
+  </div>
+  

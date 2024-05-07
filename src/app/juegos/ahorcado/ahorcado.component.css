@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .ahorcado-container {
+    text-align: center;
+  }
+  
+  .palabra {
+    letter-spacing: 10px; /* Ajusta este valor según el espacio deseado entre letras */
+  }
+  
+  .intentos {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .letra-input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .boton-intentar {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-intentar:hover {
+    background-color: #0056b3;
+  }
+  
+  .mensaje {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .mensaje.ganador {
+    color: green;
+  }
+  
+  .mensaje.perdedor {
+    color: red;
+  }
+
+ .tecla {
+    margin: 5px; /* Ajusta el valor del margen según tus preferencias */
+  }

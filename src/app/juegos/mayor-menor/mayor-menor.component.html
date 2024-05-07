@@ -1,0 +1,27 @@
+        <div class="container">
+            <div class="row">
+            <div class="column puntos">
+                <span class="counter"> Puntos: {{ puntos }}</span>
+                <br><br>
+                <h2 *ngIf="!finalFlag">La siguiente carta es:</h2>
+                <div class="mensaje lose" *ngIf="finalFlag">
+                <span>{{ mensajeFinal }}</span>
+                </div>
+                <br>
+                <button class="btn" *ngIf="!finalFlag" (click)="Jugar('mayor')">Mayor</button>
+                <button class="btn" *ngIf="!finalFlag" (click)="Jugar('menor')">Menor</button>
+                <button class="btn" *ngIf="finalFlag" (click)="Repetir()">Repetir</button>
+                <button class="btn" *ngIf="finalFlag" [routerLink]="['/home']">Salir</button>
+            </div>
+        
+        
+            <div class="column carta">
+                <div class="img__container">
+                <span class="counter"> Vidas: {{ vidas }}/{{ vidasTotal }}</span>
+                <img [src]="'../../assets/juegos/mayor-menor/' + numero + '.png'" alt="Carta">
+                <br><br>
+                </div>
+            </div>
+            </div>
+        </div>
+        
