@@ -1,0 +1,29 @@
+/*aplicados en la pagina index.html en el banner"
+*/
+
+@keyframes aparece {
+    from {
+        
+        transform: translateX(-50%);
+      }
+    
+      to {
+        transform: translateX(0%);
+      }
+    
+}
+
+@keyframes cambiar_color {
+    0% {color: rgb(4,165,41);}
+    50% {color: #fff;}
+    100% {color: rgb(255,165,74);}
+    
+}
+
+
+
+
+
+
+
+
