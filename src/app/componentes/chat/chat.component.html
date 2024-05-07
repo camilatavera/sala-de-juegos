@@ -1,0 +1,26 @@
+<app-header [headerTittle]="'SALA DE CHAT'"
+        [showChatButton]="false"
+        [showHomeButton]="true"
+        [showQuienSoyButton]="true"></app-header>
+
+<div class="principal">
+    <div class="container main-container">
+        <div class="chat-window">
+            <h2>Sala de Chat</h2>
+            <hr>
+            <div class="app-mensajes" #appMensajes>
+                <div *ngFor="let mensaje of mensajes">
+                    <span class="badge" [ngClass]="{'badge-primary': mensaje.usuario === email, 'badge-secondary': mensaje.usuario !== email}">
+                        {{ mensaje.usuario }}
+                    </span>
+                    <br>
+                    <p class="badge badge-pill badge-light">
+                        {{ mensaje.texto }}
+                    </p>
+                    <span class="hora-chat">{{ mensaje.hora }}</span>
+                </div>
+                <input type="text" class="form-control" name="mensaje" autocomplete="off" [(ngModel)]="msg" (keyup.enter)="enviarMensaje()" placeholder="Enviar... ">
+            </div>
+        </div>
+    </div>
+</div>
