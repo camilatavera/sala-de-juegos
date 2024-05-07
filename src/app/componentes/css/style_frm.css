@@ -1,0 +1,40 @@
+
+
+.section-form{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 50px;
+    border-color: black;
+    background: rgb(220,220,220);
+    padding: 30px;
+}
+
+
+
+.form-label{
+    float: left;
+    text-align: left;    
+}
+
+h1{
+    color: rgb(255,142,43);
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+.section-form div small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.section-form div{
+    text-align: center;
+}
